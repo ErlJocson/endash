@@ -80,13 +80,13 @@ export const CategoryContainer = styled.div`
 `;
 
 export const DownButton = styled(MdKeyboardArrowDown)`
-  color: white;
+  color: #adeee3;
   cursor: pointer;
   margin-bottom: 20px;
 `;
 
 export const UpButton = styled(MdKeyboardArrowUp)`
-  color: white;
+  color: #adeee3;
   cursor: pointer;
   margin-bottom: 20px;
 `;

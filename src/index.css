@@ -35,14 +35,11 @@
 
 @keyframes animateDown {
   0%,
+  20%,
   50%,
   80%,
   100% {
     transform: translateY(0);
-  }
-
-  20% {
-    transform: translateY(-2);
   }
 
   40% {

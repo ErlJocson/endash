@@ -65,14 +65,14 @@ const OldLinkInstances = () => {
 
           {showAllButton ? (
             <UpButton
-              size={50}
+              size={70}
               onClick={handleShowButton}
               className="jump"
               title="Close"
             />
           ) : (
             <DownButton
-              size={50}
+              size={70}
               onClick={handleShowButton}
               className="jump"
               title="See All"
