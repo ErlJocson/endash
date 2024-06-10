@@ -28,7 +28,7 @@ const Navigation = () => {
       </NavigationContainer>
       <BodyContainer>
         <img src={process.env.PUBLIC_URL + "/logo/hgs white logo.svg"} alt="" />
-        <h3>En Dash</h3>
+        <h3>EnDash</h3>
       </BodyContainer>
     </>
   );
