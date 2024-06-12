@@ -20,8 +20,7 @@ const ParticleComponent = () => {
           value: "#010710",
         },
       },
-      fpsLimit: 120,
-
+      fpsLimit: 240,
       particles: {
         color: {
           value: "#ffffff",
@@ -45,7 +44,7 @@ const ParticleComponent = () => {
         opacity: {
           value: {
             min: 0,
-            max: 1,
+            max: 0.5,
           },
           random: false,
           animation: {
