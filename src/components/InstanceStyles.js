@@ -6,8 +6,8 @@ export const MainContainer = styled.div`
   overflow: hidden;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 `;
 
 export const ContentContainer = styled.div`
@@ -29,7 +29,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const WhiteImageContainer = styled.img`
-  margin-top: 10px;
+  margin-top: ${(props) => (props.showAllButton ? "" : "100px")};
   height: 90px;
   cursor: pointer;
   @media screen and (max-width: 900px) {
@@ -83,10 +83,12 @@ export const DownButton = styled(MdKeyboardArrowDown)`
   color: #adeee3;
   cursor: pointer;
   margin-bottom: 20px;
+  margin-bottom: ${(props) => (props.showAllButton ? "" : "100px")};
 `;
 
 export const UpButton = styled(MdKeyboardArrowUp)`
   color: #adeee3;
   cursor: pointer;
   margin-bottom: 20px;
+  margin-bottom: ${(props) => (props.showAllButton ? "" : "100px")};
 `;

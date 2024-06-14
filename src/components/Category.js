@@ -13,6 +13,7 @@ function Category(props) {
             />
           </ButtonContainer>
         </ButtonAndIconContainer>
+
         <CardTitleContainer>
           <CardTitle>{props.title}</CardTitle>
         </CardTitleContainer>
@@ -52,7 +53,7 @@ const CardContainer = styled.div`
 
 const ButtonAndIconContainer = styled.div`
   position: relative;
-  background-color: #dedede;
+  background-color: #ededff;
   padding: 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;

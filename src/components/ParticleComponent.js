@@ -31,15 +31,15 @@ const ParticleComponent = () => {
           outModes: {
             default: "bounce",
           },
-          random: false,
-          speed: 2.3,
+          random: true,
+          speed: 2,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 100,
+          value: 120,
         },
         opacity: {
           value: {
