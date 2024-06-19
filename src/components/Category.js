@@ -25,8 +25,8 @@ function Category(props) {
 export default Category;
 
 const CardContainer = styled.div`
-  width: 120px;
-  height: 180px;
+  width: 130px;
+  height: 190px;
   margin: 10px;
   background-color: #00122b;
   border: 1px solid #000816;
@@ -41,12 +41,12 @@ const CardContainer = styled.div`
   }
 
   @media screen and (max-width: 900px) {
-    width: 100px;
+    width: 110px;
     height: 160px;
   }
 
   @media screen and (max-width: 500px) {
-    width: 80px;
+    width: 90px;
     height: 125px;
   }
 `;
