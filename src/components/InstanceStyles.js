@@ -52,10 +52,11 @@ export const CategoryContainer = styled.div`
   justify-content: center;
   align-items: ${(props) => (props.showAllButton ? "normal" : "center")};
   margin: 30px 0;
-  height: ${(props) => (props.showAllButton ? "540px" : "210px")};
+  height: ${(props) => (props.showAllButton ? "540px" : "220px")};
   transition: height 0.7s ease;
   overflow: ${(props) => (props.showAllButton ? "auto" : "hidden")};
   overflow: auto;
+
   &::-webkit-scrollbar {
     width: 8px;
   }
