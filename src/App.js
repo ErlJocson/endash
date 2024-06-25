@@ -11,7 +11,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Navigation />} />
+          <Route exact path="/endash" element={<Navigation />} />
           <Route path="/video" element={<VideoInstance />} />
           <Route path="/link" element={<LinkInstance />} />
           <Route path="/old/video" element={<OldVideoInstances />} />

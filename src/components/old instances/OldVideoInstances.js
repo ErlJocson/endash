@@ -31,7 +31,7 @@ const OldVideoInstance = () => {
   };
 
   const handleHomeClick = () => {
-    navigate("/");
+    navigate("/endash");
   };
 
   return (

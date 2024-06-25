@@ -21,7 +21,7 @@ const OldLinkInstances = () => {
   };
 
   const handleHomeClick = () => {
-    navigate("/");
+    navigate("/endash");
   };
 
   return (
