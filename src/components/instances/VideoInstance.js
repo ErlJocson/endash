@@ -30,7 +30,7 @@ const VideoInstance = () => {
   };
 
   const handleHomeClick = () => {
-    navigate("/endash");
+    navigate("/");
   };
 
   return (

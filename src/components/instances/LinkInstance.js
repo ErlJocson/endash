@@ -20,7 +20,7 @@ const LinkInstance = () => {
   };
 
   const handleHomeClick = () => {
-    navigate("/endash");
+    navigate("/");
   };
 
   return (

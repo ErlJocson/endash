@@ -19,10 +19,10 @@ const Navigation = () => {
         <LinkContainer style={{ "margin-right": "150px" }}>
           <h3>OLD BACKGROUND: </h3>
           <p>
-            <Link to="old/video">Videos</Link>
+            <Link to="/old/video">Videos</Link>
           </p>
           <p>
-            <Link to="old/link">Links</Link>
+            <Link to="/old/link">Links</Link>
           </p>
         </LinkContainer>
       </NavigationContainer>
