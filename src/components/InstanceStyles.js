@@ -12,20 +12,11 @@ export const MainContainer = styled.div`
 
 export const ContentContainer = styled.div`
   height: 100%;
-  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: 900px) {
-    width: 90%;
-  }
-
-  @media screen and (max-width: 500px) {
-    width: 100%;
-  }
 `;
 
 export const WhiteImageContainer = styled.img`
@@ -46,7 +37,6 @@ export const WhiteImageContainer = styled.img`
 `;
 
 export const CategoryContainer = styled.div`
-  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -56,6 +46,25 @@ export const CategoryContainer = styled.div`
   transition: height 0.7s ease;
   overflow: ${(props) => (props.showAllButton ? "auto" : "hidden")};
   overflow: auto;
+  width: 40%;
+
+  @media screen and (max-width: 2100px) {
+    & {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    & {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    & {
+      width: 100%;
+    }
+  }
 
   &::-webkit-scrollbar {
     width: 8px;
