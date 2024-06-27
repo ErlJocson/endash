@@ -42,6 +42,7 @@ const NavigationContainer = styled.div`
   justify-content: space-around;
   height: 10vh;
   background-color: #051c3d;
+  overflow: hidden;
 `;
 
 const LinkContainer = styled.div`
