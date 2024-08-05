@@ -50,24 +50,24 @@ export const links = [
     link: "/videos/v1.mp4",
     website: "http://www.google.com/search?q=digital+transformation",
   },
-  {
-    title: "Data Analytics",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
+  // {
+  //   title: "Data Analytics",
+  //   icon: "/icons/digital transformation.png",
+  //   link: "/videos/v1.mp4",
+  //   website: "http://www.google.com/search?q=digital+transformation",
+  // },
   {
     title: "Interaction Analytics",
     icon: "/icons/digital transformation.png",
     link: "/videos/v1.mp4",
     website: "http://www.google.com/search?q=digital+transformation",
   },
-  {
-    title: "Data Visualization",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
+  // {
+  //   title: "Data Visualization",
+  //   icon: "/icons/digital transformation.png",
+  //   link: "/videos/v1.mp4",
+  //   website: "http://www.google.com/search?q=digital+transformation",
+  // },
   {
     title: "Application Development",
     icon: "/icons/digital transformation.png",
