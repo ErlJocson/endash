@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   top: 0;
   left: 0;
   height: 100vh;
@@ -20,7 +20,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const WhiteImageContainer = styled.img`
-  margin-top: ${(props) => (props.showAllButton ? "" : "100px")};
+  margin-top: ${(props) => (props.showAllButton ? "" : "80px")};
   height: 90px;
   cursor: pointer;
   @media screen and (max-width: 900px) {
@@ -40,30 +40,20 @@ export const CategoryContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: ${(props) => (props.showAllButton ? "normal" : "center")};
+  align-items: ${(props) => (props.showAllButton ? "" : "space-between")};
   margin: 30px 0;
-  height: ${(props) => (props.showAllButton ? "540px" : "220px")};
+  height: ${(props) => (props.showAllButton ? "1500px" : "220px")};
   transition: height 0.7s ease;
   overflow: ${(props) => (props.showAllButton ? "auto" : "hidden")};
   overflow: auto;
-  width: 40%;
+  width: 60vw;
 
-  @media screen and (max-width: 2100px) {
-    & {
-      width: 60%;
-    }
-  }
-
-  @media screen and (max-width: 1600px) {
-    & {
-      width: 80%;
-    }
+  @media screen and (max-width: 1550px) {
+    width: 70vw;
   }
 
   @media screen and (max-width: 1300px) {
-    & {
-      width: 100%;
-    }
+    width: 80vw;
   }
 
   &::-webkit-scrollbar {
@@ -82,23 +72,18 @@ export const CategoryContainer = styled.div`
   &::-webkit-scrollbar-track {
     background-color: #f0f0f0;
   }
-
-  @media screen and (max-width: 900px) {
-    width: 95%;
-    height: 350px;
-  }
 `;
 
 export const DownButton = styled(MdKeyboardArrowDown)`
   color: #adeee3;
   cursor: pointer;
   margin-bottom: 20px;
-  margin-bottom: ${(props) => (props.showAllButton ? "" : "100px")};
+  margin-bottom: ${(props) => (props.showAllButton ? "" : "50px")};
 `;
 
 export const UpButton = styled(MdKeyboardArrowUp)`
   color: #adeee3;
   cursor: pointer;
-  margin-bottom: 20px;
-  margin-bottom: ${(props) => (props.showAllButton ? "" : "100px")};
+  margin-bottom: 10px;
+  margin-bottom: ${(props) => (props.showAllButton ? "" : "50px")};
 `;
