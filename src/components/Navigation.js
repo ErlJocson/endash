@@ -7,17 +7,19 @@ const Navigation = () => {
     <>
       <NavigationContainer className="shadow">
         <LinkContainer style={{ "margin-left": "150px" }}>
-          <h3>NEW BACKGROUND: </h3>
           <p>
-            <Link to="/video">Videos</Link>
+            <Link to="/">Home</Link>
           </p>
           <p>
-            <Link to="/link">Links</Link>
+            <Link to="/reorder">Reorder</Link>
+          </p>
+          <p>
+            <Link to="/edit-details">Edit Details</Link>
           </p>
         </LinkContainer>
 
         <LinkContainer style={{ "margin-right": "150px" }}>
-          <h3>OLD BACKGROUND: </h3>
+          <h3>PRODUCTION: </h3>
           <p>
             <Link to="/old/video">Videos</Link>
           </p>
@@ -26,10 +28,6 @@ const Navigation = () => {
           </p>
         </LinkContainer>
       </NavigationContainer>
-      <BodyContainer>
-        <img src={process.env.PUBLIC_URL + "/logo/hgs white logo.svg"} alt="" />
-        <h3>EnDash</h3>
-      </BodyContainer>
     </>
   );
 };
@@ -68,25 +66,5 @@ const LinkContainer = styled.div`
     *:hover {
       color: gray;
     }
-  }
-`;
-
-const BodyContainer = styled.div`
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  img {
-    height: 100px;
-  }
-
-  h3 {
-    color: white;
-    font-family: Georgia;
-    font-size: 100px;
-    margin-top: 50px;
-    font-style: italic;
-    letter-spacing: 1px;
   }
 `;

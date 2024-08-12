@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
   position: absolute;
-  /* overflow: hidden; */
   top: 0;
   left: 0;
   height: 100vh;
@@ -40,11 +39,11 @@ export const CategoryContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: ${(props) => (props.showAllButton ? "" : "space-between")};
+  align-items: ${(props) => (props.showbutton ? "" : "space-between")};
   margin: 30px 0;
-  height: ${(props) => (props.showAllButton ? "1500px" : "220px")};
+  height: ${(props) => (props.showbutton ? "1500px" : "220px")};
   transition: height 0.7s ease;
-  overflow: ${(props) => (props.showAllButton ? "auto" : "hidden")};
+  overflow: ${(props) => (props.showbutton ? "auto" : "hidden")};
   overflow: auto;
   width: 60vw;
 

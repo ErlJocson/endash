@@ -3,15 +3,14 @@ import styled from "styled-components";
 function Category(props) {
   return (
     <>
-      <CardContainer onClick={props.clicked}>
+      <CardContainer>
         <ButtonAndIconContainer>
-          <IconContainer src={process.env.PUBLIC_URL + props.icon} />
-          <ButtonContainer>
-            <IconContainer2
-              src={process.env.PUBLIC_URL + "/icons/play.png"}
-              title={"Play Video for " + props.title}
-            />
-          </ButtonContainer>
+          <img src={process.env.PUBLIC_URL + props.icon} alt="" />
+          <IconContainer2
+            src={process.env.PUBLIC_URL + "/icons/play.png"}
+            title={"Play Video for " + props.title}
+            onClick={props.clicked}
+          />
         </ButtonAndIconContainer>
 
         <CardTitleContainer>
@@ -30,15 +29,7 @@ const CardContainer = styled.div`
   margin: 10px;
   background-color: #00122b;
   border: 1px solid #000816;
-  cursor: pointer;
   border-radius: 10px;
-  position: relative;
-
-  &:hover {
-    img {
-      display: inline;
-    }
-  }
 
   @media screen and (max-width: 900px) {
     width: 110px;
@@ -52,26 +43,19 @@ const CardContainer = styled.div`
 `;
 
 const ButtonAndIconContainer = styled.div`
-  position: relative;
-  background-color: #ededff;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-`;
-
-const IconContainer = styled.img`
   width: 100%;
-  height: 100%;
-`;
-
-const ButtonContainer = styled.div`
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 130px;
+  background-color: #dedede;
+  position: relative;
+  img {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+  }
 `;
 
 const CardTitleContainer = styled.div`
@@ -98,26 +82,12 @@ const CardTitle = styled.h5`
 `;
 
 const IconContainer2 = styled.img`
-  display: none;
-  width: 80px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-11%, 0);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 500ms;
   &:hover {
-    opacity: 0.8;
-  }
-
-  @media screen and (max-width: 900px) {
-    & {
-      width: 60px;
-      transform: translate(-17%, 0);
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    & {
-      width: 40px;
-      transform: translate(-25%, 0);
-    }
+    opacity: 1;
   }
 `;

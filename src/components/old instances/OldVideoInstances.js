@@ -54,7 +54,7 @@ const OldVideoInstance = () => {
             />
           )}
 
-          <CategoryContainer showAllButton={showAllButton}>
+          <CategoryContainer showbutton={showAllButton}>
             {!showAllButton
               ? links.map((link, index) => {
                   if (index < 6) {

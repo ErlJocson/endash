@@ -28,11 +28,9 @@ const ParticleComponent = () => {
         move: {
           direction: "none",
           enable: true,
-          outModes: {
-            default: "bounce",
-          },
+
           random: true,
-          speed: 2,
+          speed: 1,
           straight: false,
         },
         number: {
@@ -49,7 +47,7 @@ const ParticleComponent = () => {
           random: false,
           animation: {
             enable: true,
-            speed: 1,
+            speed: 0.5,
             sync: false,
           },
         },
