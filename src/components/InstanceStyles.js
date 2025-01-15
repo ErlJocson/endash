@@ -39,13 +39,14 @@ export const CategoryContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: ${(props) => (props.showbutton ? "" : "space-between")};
+  /* align-items: ${(props) => (props.showbutton ? "" : "space-between")}; */
+  align-items: center;
   margin: 30px 0;
-  height: ${(props) => (props.showbutton ? "1500px" : "220px")};
+  height: ${(props) => (props.showbutton ? "700px" : "240px")};
   transition: height 0.7s ease;
   overflow: ${(props) => (props.showbutton ? "auto" : "hidden")};
   overflow: auto;
-  width: 60vw;
+  width: 70vw;
 
   @media screen and (max-width: 1550px) {
     width: 70vw;

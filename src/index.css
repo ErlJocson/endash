@@ -1,7 +1,7 @@
 :root {
   --shadow: 0 2px 6px rgb(118, 118, 118);
   --light-color: rgb(216, 216, 216);
-  --dark-color: rgb(38, 38, 38);
+  --dark-color: rgb(18, 18, 18);
   --light-shadow: 0 2px 6px var(--light-color);
   --dark-shadow: 0 2px 6px var(--dark-color);
 

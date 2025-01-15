@@ -3,7 +3,7 @@ import styled from "styled-components";
 function Category(props) {
   return (
     <>
-      <CardContainer>
+      <CardContainer className="dark-shadow">
         <ButtonAndIconContainer>
           <img src={process.env.PUBLIC_URL + props.icon} alt="" />
           <IconContainer2
@@ -24,11 +24,10 @@ function Category(props) {
 export default Category;
 
 const CardContainer = styled.div`
-  width: 130px;
-  height: 190px;
-  margin: 10px;
-  background-color: #00122b;
-  border: 1px solid #000816;
+  width: 150px;
+  height: 210px;
+  margin: 15px;
+  background-color: #1f2937;
   border-radius: 10px;
 
   @media screen and (max-width: 900px) {
@@ -48,13 +47,14 @@ const ButtonAndIconContainer = styled.div`
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   width: 100%;
-  height: 130px;
+  height: 150px;
   background-color: #dedede;
   position: relative;
   img {
     width: 100%;
+    height: 100%;
     position: absolute;
-    padding: 15px;
+    /* padding: 15px; */
   }
 `;
 
@@ -71,7 +71,7 @@ const CardTitleContainer = styled.div`
 
 const CardTitle = styled.h5`
   color: white;
-
+  text-align: center;
   @media screen and (max-width: 900px) {
     font-size: 12px;
   }
