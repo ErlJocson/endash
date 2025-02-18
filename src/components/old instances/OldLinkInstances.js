@@ -63,7 +63,7 @@ const OldLinkInstances = () => {
                 })}
           </CategoryContainer>
 
-          {showAllButton ? (
+          {/* {showAllButton ? (
             <UpButton
               size={70}
               onClick={handleShowButton}
@@ -77,7 +77,7 @@ const OldLinkInstances = () => {
               className="jump"
               title="See All"
             />
-          )}
+          )} */}
         </ContentContainer>
       </MainContainer>
     </>
