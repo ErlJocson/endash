@@ -35,6 +35,4 @@ export const links = [
     link: "/videos/HGS Agent X.mp4",
     website: "http://www.google.com/search?q=digital+transformation",
   },
-  
-  
 ]
