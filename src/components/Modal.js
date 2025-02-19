@@ -146,9 +146,9 @@ const MainContentContainer = styled.div`
   video {
     border-radius: 5px;
     max-width: 100%;  
-    height: 750px; 
+    height: 800px; 
     object-fit: cover; 
-    margin-bottom: 50px;
+    margin-bottom: 5vh;
   }
 `;
 

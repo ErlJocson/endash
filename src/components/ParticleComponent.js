@@ -37,7 +37,7 @@ const ParticleComponent = () => {
           density: {
             enable: true,
           },
-          value: 200,
+          value: 600,
         },
         opacity: {
           value: {
@@ -55,7 +55,7 @@ const ParticleComponent = () => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: .5, max: 2 },
         },
       },
       detectRetina: true,

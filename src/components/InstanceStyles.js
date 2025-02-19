@@ -11,7 +11,6 @@ export const MainContainer = styled.div`
 
 export const ContentContainer = styled.div`
   height: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +36,6 @@ export const WhiteImageContainer = styled.img`
 
 export const CategoryContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   /* align-items: ${(props) => (props.showbutton ? "" : "space-between")}; */
   align-items: center;
@@ -46,11 +44,6 @@ export const CategoryContainer = styled.div`
   transition: height 0.7s ease;
   /* overflow: ${(props) => (props.showbutton ? "auto" : "hidden")};
   overflow: auto; */
-  width: 70vw;
-
-  @media screen and (max-width: 1550px) {
-    width: 70vw;
-  }
 
   @media screen and (max-width: 1300px) {
     width: 80vw;

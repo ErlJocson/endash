@@ -25,10 +25,10 @@ export default Category;
 
 const CardContainer = styled.div`
   width: 180px;
-  height: 220px;
-  margin: 15px;
+  height: 250px;
+  margin: 10px;
   background-color: white;
-  border: 1px solid rgb(87, 88, 89);
+  border: 2px solid rgb(87, 88, 89);
   border-radius: 5px;
 
 
@@ -49,14 +49,14 @@ const ButtonAndIconContainer = styled.div`
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   width: 100%;
-  height: 150px;
+  height: 180px;
   background-color: #dedede;
   position: relative;
   img {
     width: 100%;
     height: 100%;
     position: absolute;
-    border-bottom:.3px solid white;
+    border-bottom:.3px solid rgb(87,88,89);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
@@ -77,7 +77,7 @@ const CardTitleContainer = styled.div`
 
 const CardTitle = styled.h5`
   color: black;
-  /* text-align: center; */
+   text-align: center; 
   @media screen and (max-width: 900px) {
     font-size: 12px;
   }
