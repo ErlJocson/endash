@@ -1,74 +1,33 @@
 export const links = [
   {
-    title: "Automation",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
+    title: "Transformation Capability",
+    icon: "/icons/original logo.png",
+    link: "/videos/Transformation Capability V4 2.mp4",
     website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
-    title: "Interaction Analytics",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
-    title: "Application Development",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
-    title: "Gamification",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
-    title: "Visual Intelligence",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
-    title: "Translation Bot",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
-    title: "Chat Bot",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
-    title: "Quality Module",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
-    title: "Decision Trees",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
-    title: "Social Media",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
+  },{
     title: "Digital Transformation",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
+    icon: "/icons/original logo.png",
+    link: "/videos/TransformationV4.0 2.mp4",
     website: "http://www.google.com/search?q=digital+transformation",
-  },
-  {
+  },{
+    title: "Automation",
+    icon: "/icons/original logo.png",
+    link: "/videos/Intelligent Automation V5.0 1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },{
+    title: "Vision AI",
+    icon: "/icons/original logo.png",
+    link: "/videos/Vision AI V1.0.mp4",
+    website: "https://app.techsee.me/login",
+  },{
+    title: "Speech AI",
+    icon: "/icons/original logo.png",
+    link: "/videos/IA1 1.mp4",
+    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2freporting%2fDefault.aspx",
+  },{
     title: "Agent X",
-    icon: "/icons/digital transformation.png",
-    link: "/videos/v1.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
+    icon: "/icons/original logo.png",
+    link: "/videos/HGS Agent X.mp4",
+    website: "https://agentx-demo-staticweb.hgsdigital.com/",
   },
 ];

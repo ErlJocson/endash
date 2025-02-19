@@ -17,7 +17,7 @@ const ParticleComponent = () => {
     () => ({
       background: {
         color: {
-          value: "#161E30",
+          value: "#0F172A",
         },
       },
       fpsLimit: 240,
@@ -37,7 +37,7 @@ const ParticleComponent = () => {
           density: {
             enable: true,
           },
-          value: 180,
+          value: 200,
         },
         opacity: {
           value: {

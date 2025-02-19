@@ -43,7 +43,7 @@ const Modal = ({ videoLink, modal, website, title }) => {
 
   const handlePlay = () => {
     if (videoRef.current) {
-      handleFullScreen();
+ 
       videoRef.current.play();
     }
 
@@ -67,11 +67,7 @@ const Modal = ({ videoLink, modal, website, title }) => {
   return (
     <ModalContainer>
       <MainContentContainer>
-        <h3>{title}</h3>
-        <video ref={videoRef}>
-          <source src={videoLink} type="video/mp4" />
-        </video>
-        <ButtonContainer>
+      <ButtonContainer>
           {videoStatus ? (
             <button
               onClick={handlePause}
@@ -119,6 +115,10 @@ const Modal = ({ videoLink, modal, website, title }) => {
             <IoMdCloseCircleOutline />
           </button>
         </ButtonContainer>
+        <video ref={videoRef} className="shadow" >
+          <source src={videoLink} type="video/mp4" />
+        </video>
+        
       </MainContentContainer>
     </ModalContainer>
   );
@@ -139,34 +139,16 @@ const ModalContainer = styled.div`
 
 const MainContentContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction:column ;
+  justify-content: space-between;
   align-items: center;
-
+  height: 100vh;
   video {
-    max-width: 60%;
-    height: auto;
-
     border-radius: 5px;
-  }
-
-  h3 {
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  @media screen and (max-width: 900px) {
-    video {
-      max-width: 80%;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    video {
-      max-width: 90%;
-    }
+    max-width: 100%;  
+    height: 750px; 
+    object-fit: cover; 
+    margin-bottom: 50px;
   }
 `;
 
@@ -177,6 +159,7 @@ const ButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 20px auto;
+  margin-top: 2px;
 
   button {
     padding: 4px 40px;

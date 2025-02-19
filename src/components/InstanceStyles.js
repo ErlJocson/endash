@@ -44,8 +44,8 @@ export const CategoryContainer = styled.div`
   margin: 30px 0;
   height: ${(props) => (props.showbutton ? "700px" : "240px")};
   transition: height 0.7s ease;
-  overflow: ${(props) => (props.showbutton ? "auto" : "hidden")};
-  overflow: auto;
+  /* overflow: ${(props) => (props.showbutton ? "auto" : "hidden")};
+  overflow: auto; */
   width: 70vw;
 
   @media screen and (max-width: 1550px) {
@@ -56,7 +56,7 @@ export const CategoryContainer = styled.div`
     width: 80vw;
   }
 
-  &::-webkit-scrollbar {
+  /* &::-webkit-scrollbar {
     width: 8px;
   }
 
@@ -71,7 +71,7 @@ export const CategoryContainer = styled.div`
 
   &::-webkit-scrollbar-track {
     background-color: #f0f0f0;
-  }
+  } */
 `;
 
 export const DownButton = styled(MdKeyboardArrowDown)`

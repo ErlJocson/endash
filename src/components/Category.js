@@ -24,11 +24,12 @@ function Category(props) {
 export default Category;
 
 const CardContainer = styled.div`
-  width: 150px;
-  height: 210px;
+  width: 180px;
+  height: 220px;
   margin: 15px;
-  background-color: #1f2937;
-  border-radius: 10px;
+  background-color: white;
+  border: 1px solid rgb(87, 88, 89);
+  border-radius: 5px;
 
   @media screen and (max-width: 900px) {
     width: 110px;
@@ -54,7 +55,9 @@ const ButtonAndIconContainer = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
-    /* padding: 15px; */
+    border-bottom:.3px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 `;
 
@@ -67,11 +70,13 @@ const CardTitleContainer = styled.div`
   @media screen and (max-width: 500px) {
     padding: 5px 6px 6px 6px;
   }
+
+  font-size: 20px;
 `;
 
 const CardTitle = styled.h5`
-  color: white;
-  text-align: center;
+  color: black;
+  /* text-align: center; */
   @media screen and (max-width: 900px) {
     font-size: 12px;
   }
@@ -82,12 +87,11 @@ const CardTitle = styled.h5`
 `;
 
 const IconContainer2 = styled.img`
+  padding: 30px;
   cursor: pointer;
   width: 100%;
   height: 100%;
-  opacity: 0;
   transition: all 500ms;
-  &:hover {
-    opacity: 1;
-  }
+
+  opacity: calc(.75);
 `;
