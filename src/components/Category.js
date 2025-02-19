@@ -31,6 +31,7 @@ const CardContainer = styled.div`
   border: 1px solid rgb(87, 88, 89);
   border-radius: 5px;
 
+
   @media screen and (max-width: 900px) {
     width: 110px;
     height: 160px;

@@ -1,18 +1,74 @@
 export const links = [
   {
-    title: "Transformation Capability",
-    icon: "/icons/original logo.png",
-    link: "/videos/Transformation Capability V4 2.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },{
-    title: "Digital Transformation",
-    icon: "/icons/original logo.png",
-    link: "/videos/TransformationV4.0 2.mp4",
-    website: "http://www.google.com/search?q=digital+transformation",
-  },{
     title: "Automation",
-    icon: "/icons/original logo.png",
-    link: "/videos/Intelligent Automation V5.0 1.mp4",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Interaction Analytics",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Application Development",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Gamification",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Visual Intelligence",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Translation Bot",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Chat Bot",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Quality Module",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Decision Trees",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Social Media",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Digital Transformation",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
+    website: "http://www.google.com/search?q=digital+transformation",
+  },
+  {
+    title: "Agent X",
+    icon: "/icons/image_placeholder.png",
+    link: "/videos/v1.mp4",
     website: "http://www.google.com/search?q=digital+transformation",
   },{
     title: "Vision AI",
