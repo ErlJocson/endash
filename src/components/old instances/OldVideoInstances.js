@@ -57,7 +57,7 @@ const OldVideoInstance = () => {
           <CategoryContainer showbutton={showAllButton}>
             {!showAllButton
               ? links.map((link, index) => {
-                  if (index < 6) {
+                  if (index < 6 &&  link.video) {
                     return (
                       <Category
                         key={index}
@@ -66,7 +66,7 @@ const OldVideoInstance = () => {
                         play={link.play}
                         clicked={() => {
                           handleShowModal();
-                          setVideoLink(process.env.PUBLIC_URL + link.link);
+                          setVideoLink(process.env.PUBLIC_URL + link.video);
                           setWebsiteLink(link.website);
                           setVideoTitle(link.title);
                         }}
@@ -77,6 +77,7 @@ const OldVideoInstance = () => {
                   return false;
                 })
               : links.map((link, index) => {
+                if (link.video) {
                   return (
                     <Category
                       key={index}
@@ -84,17 +85,17 @@ const OldVideoInstance = () => {
                       icon={link.icon}
                       clicked={() => {
                         handleShowModal();
-                        setVideoLink(process.env.PUBLIC_URL + link.link);
+                        setVideoLink(process.env.PUBLIC_URL + link.video);
                         setWebsiteLink(link.website);
                         setVideoTitle(link.title);
                       }}
                       modal={() => handleShowModal()}
                     />
-                  );
+                  )};
                 })}
           </CategoryContainer>
 
-          {showAllButton ? (
+          {/* {showAllButton ? (
             <UpButton
               size={70}
               onClick={handleShowButton}
@@ -108,7 +109,8 @@ const OldVideoInstance = () => {
               className="jump"
               title="See All"
             />
-          )}
+          )} */}
+
         </ContentContainer>
       </MainContainer>
     </>
