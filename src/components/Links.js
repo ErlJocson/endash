@@ -27,7 +27,7 @@ export const links = [
     title: "Speech AI",
     icon: "/icons/image_placeholder.png",
     link: "/videos/IA1.mp4",
-    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
+    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2freporting%2fDefault.aspx",
   },
   {
     title: "Agent X",
