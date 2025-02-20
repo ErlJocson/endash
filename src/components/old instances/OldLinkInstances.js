@@ -45,7 +45,7 @@ const OldLinkInstances = () => {
                         title={link.title}
                         icon={link.icon}
                         play={link.play}
-                        clicked={() => (window.location.href = link.website)}
+                        clicked={() => (window.open(link.website), "_blank")}
                       />
                     );
                   }
@@ -57,7 +57,7 @@ const OldLinkInstances = () => {
                       key={index}
                       title={link.title}
                       icon={link.icon}
-                      clicked={() => (window.location.href = link.website)}
+                      clicked={() => (window.open(link.website), "_blank")}
                     />
                   );
                 })}

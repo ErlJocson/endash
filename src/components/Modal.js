@@ -88,7 +88,7 @@ const Modal = ({ videoLink, modal, website, title }) => {
 
           <button
             onClick={() => {
-              window.location.href = website;
+              window.open(website, "_blank");
             }}
             className="btn-site"
             title={"Visit Website for " + title}
