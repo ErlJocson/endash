@@ -94,7 +94,7 @@ const OldVideoInstance = () => {
                 })}
           </CategoryContainer>
 
-          {/* {showAllButton ? (
+          {showAllButton ? (
             <UpButton
               size={70}
               onClick={handleShowButton}
@@ -108,7 +108,7 @@ const OldVideoInstance = () => {
               className="jump"
               title="See All"
             />
-          )} */}
+          )}
         </ContentContainer>
       </MainContainer>
     </>

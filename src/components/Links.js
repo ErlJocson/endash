@@ -1,21 +1,9 @@
 export const links = [
   {
-    title: "Transformation Capability",
+    title: "Speech AI",
     icon: "/icons/image_placeholder.png",
-    link: "/videos/Transformation Capability V4.mp4",
-    website: "",
-  },
-  {
-    title: "Digital Transformation",
-    icon: "/icons/image_placeholder.png",
-    link: "/videos/TransformationV4.0.mp4",
-    website: "",
-  },
-  {
-    title: "Automation",
-    icon: "/icons/image_placeholder.png",
-    link: "/videos/Intelligent Automation V5.0.mp4",
-    website: "",
+    link: "/videos/IA1.mp4",
+    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx",
   },
   {
     title: "Vision AI",
@@ -24,15 +12,45 @@ export const links = [
     website: "https://app.techsee.me/login",
   },
   {
-    title: "Speech AI",
+    title: "Document Translator",
     icon: "/icons/image_placeholder.png",
-    link: "/videos/IA1.mp4",
-    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2freporting%2fDefault.aspx",
+    link: "",
+    website: "https://smartcat.com/sign-in",
   },
   {
     title: "Agent X",
     icon: "/icons/image_placeholder.png",
     link: "/videos/HGS Agent X.mp4",
     website: "https://agentx-demo-staticweb.hgsdigital.com/",
+  },
+  {
+    title: "Gamification",
+    icon: "/icons/image_placeholder.png",
+    link: "",
+    website: "https://mygame.teamhgs.com/user/login",
+  },
+  {
+    title: "Productivity",
+    icon: "/icons/image_placeholder.png",
+    link: "",
+    website: "https://app.powerbi.com/links/1NLx0EsgjY?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
+  },
+  {
+    title: "Caller Sentiment",
+    icon: "/icons/image_placeholder.png",
+    link: "",
+    website: "https://app.powerbi.com/links/iO4s4gg519?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
+  },
+  {
+    title: "Customer Effort",
+    icon: "/icons/image_placeholder.png",
+    link: "",
+    website: "https://app.powerbi.com/links/QqMtcpZNdv?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
+  },
+  {
+    title: "Survey Analytics",
+    icon: "/icons/image_placeholder.png",
+    link: "",
+    website: "https://app.powerbi.com/links/Qj-u1ai2y4?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
   },
 ]
