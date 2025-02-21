@@ -1,5 +1,23 @@
 export const links = [
   {
+    title: "Digital Transformation",
+    icon: "/icons/image_placeholder.png",
+    video: "/videos/TransformationV4.0.mp4",
+    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx",
+  },
+  {
+    title: "Transformation Capability",
+    icon: "/icons/image_placeholder.png",
+    video: "/videos/transformation capability V4.mp4",
+    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx",
+  },
+  {
+    title: "Automation",
+    icon: "/icons/image_placeholder.png",
+    video: "/videos/Intelligent Automation V5.1.mp4",
+    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx",
+  },
+  {
     title: "Speech AI",
     icon: "/icons/image_placeholder.png",
     video: "/videos/IA1.mp4",
@@ -12,22 +30,10 @@ export const links = [
     website: "https://app.techsee.me/login",
   },
   {
-    title: "Document Translator",
-    icon: "/icons/image_placeholder.png",
-    video: "asdf",
-    website: "https://smartcat.com/sign-in",
-  },
-  {
     title: "Agent X",
     icon: "/icons/image_placeholder.png",
     video: "/videos/HGS Agent X.mp4",
     website: "https://agentx-demo-staticweb.hgsdigital.com/",
-  },
-  {
-    title: "Gamification",
-    icon: "/icons/image_placeholder.png",
-    video: "asdf",
-    website: "https://mygame.teamhgs.com/user/login",
   },
   {
     title: "Productivity",
