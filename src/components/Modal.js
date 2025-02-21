@@ -9,25 +9,12 @@ const Modal = ({ videoLink, modal, website, title }) => {
   const videoRef = useRef(null);
   const [videoStatus, setVideoStatus] = useState(false);
 
-  const handleFullScreen = () => {
-    if (videoRef.current) {
-      if (videoRef.current.requestFullscreen) {
-        videoRef.current.requestFullscreen();
-      } else if (videoRef.current.mozRequestFullScreen) {
-        videoRef.current.mozRequestFullScreen();
-      } else if (videoRef.current.webkitRequestFullscreen) {
-        videoRef.current.webkitRequestFullscreen();
-      } else if (videoRef.current.msRequestFullscreen) {
-        videoRef.current.msRequestFullscreen();
-      }
-    }
-  };
-
   const handleEscapeKey = useCallback(() => {
     modal();
   }, [modal]);
 
   useEffect(() => {
+    handlePlay()
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
         handleEscapeKey();
@@ -97,14 +84,6 @@ const Modal = ({ videoLink, modal, website, title }) => {
           </button>
 
           <button
-            onClick={handleFullScreen}
-            title="Fullscreen"
-            className="btn-full"
-          >
-            <AiOutlineFullscreen />
-          </button>
-
-          <button
             onClick={() => {
               handleStop();
               modal();
@@ -115,7 +94,7 @@ const Modal = ({ videoLink, modal, website, title }) => {
             <IoMdCloseCircleOutline />
           </button>
         </ButtonContainer>
-        <video ref={videoRef} className="shadow" >
+        <video ref={videoRef} className="shadow" controls >
           <source src={videoLink} type="video/mp4" />
         </video>
         

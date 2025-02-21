@@ -88,11 +88,11 @@ const CardTitle = styled.h5`
 `;
 
 const IconContainer2 = styled.img`
-  padding: 30px;
+  padding: 45px;
   cursor: pointer;
   width: 100%;
   height: 100%;
   transition: all 500ms;
 
-  opacity: calc(.75);
+  opacity: calc(.85);
 `;
