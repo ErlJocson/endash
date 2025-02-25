@@ -6,11 +6,15 @@ function Category(props) {
       <CardContainer className="dark-shadow">
         <ButtonAndIconContainer>
           <img src={process.env.PUBLIC_URL + props.icon} alt="" />
-          <IconContainer2
+          
+        {
+        props.showPlayIcon ? (
+            <IconContainer2
             src={process.env.PUBLIC_URL + "/icons/play.png"}
             title={"Play Video for " + props.title}
             onClick={props.clicked}
-          />
+          />) : ""
+          }          
         </ButtonAndIconContainer>
 
         <CardTitleContainer>
