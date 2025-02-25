@@ -6,15 +6,12 @@ function Category(props) {
       <CardContainer className="dark-shadow">
         <ButtonAndIconContainer>
           <img src={process.env.PUBLIC_URL + props.icon} alt="" />
-          
-        {
-        props.showPlayIcon ? (
             <IconContainer2
-            src={process.env.PUBLIC_URL + "/icons/play.png"}
-            title={"Play Video for " + props.title}
-            onClick={props.clicked}
-          />) : ""
-          }          
+              src={process.env.PUBLIC_URL + "/icons/play.png"}
+              title={"Play Video for " + props.title}
+              onClick={props.clicked}
+              showPlayIcon={props.showPlayIcon}
+            />
         </ButtonAndIconContainer>
 
         <CardTitleContainer>
@@ -97,6 +94,5 @@ const IconContainer2 = styled.img`
   width: 100%;
   height: 100%;
   transition: all 500ms;
-
-  opacity: calc(.85);
+  opacity: ${(props) => (props.showPlayIcon ? ".85" : "0")};
 `;

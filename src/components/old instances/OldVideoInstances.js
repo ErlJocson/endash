@@ -83,8 +83,8 @@ const OldVideoInstance = () => {
                     <Category
                       key={index}
                       title={link.title}
-                        showPlayIcon={true}
-                        icon={link.icon}
+                      showPlayIcon={true}
+                      icon={link.icon}
                       clicked={() => {
                         handleShowModal();
                         setVideoLink(process.env.PUBLIC_URL + link.video);
