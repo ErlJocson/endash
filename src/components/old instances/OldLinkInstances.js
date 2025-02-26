@@ -45,6 +45,7 @@ const OldLinkInstances = () => {
                         title={link.title}
                         icon={link.icon}
                         play={link.play}
+                        showPlayIcon={false}
                         clicked={() => (window.open(link.website), "_blank")}
                       />
                     );
@@ -57,6 +58,7 @@ const OldLinkInstances = () => {
                       key={index}
                       title={link.title}
                       icon={link.icon}
+                      showPlayIcon={false}
                       clicked={() => (window.open(link.website), "_blank")}
                     />
                   );

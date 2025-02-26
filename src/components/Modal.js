@@ -55,7 +55,7 @@ const Modal = ({ videoLink, modal, website, title }) => {
     <ModalContainer>
       <MainContentContainer>
       <ButtonContainer>
-          {videoStatus ? (
+          {/* {videoStatus ? (
             <button
               onClick={handlePause}
               className="btn-pause"
@@ -71,9 +71,9 @@ const Modal = ({ videoLink, modal, website, title }) => {
             >
               <GiPlayButton />
             </button>
-          )}
+          )} */}
 
-          <button
+          {/* <button
             onClick={() => {
               window.open(website, "_blank");
             }}
@@ -81,7 +81,7 @@ const Modal = ({ videoLink, modal, website, title }) => {
             title={"Visit Website for " + title}
           >
             <CgWebsite />
-          </button>
+          </button> */}
 
           <button
             onClick={() => {
@@ -94,7 +94,7 @@ const Modal = ({ videoLink, modal, website, title }) => {
             <IoMdCloseCircleOutline />
           </button>
         </ButtonContainer>
-        <video ref={videoRef} className="shadow" controls >
+        <video ref={videoRef} controls >
           <source src={videoLink} type="video/mp4" />
         </video>
         
@@ -132,13 +132,11 @@ const MainContentContainer = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  margin: 20px auto;
-  margin-top: 2px;
 
   button {
     padding: 4px 40px;
@@ -146,7 +144,7 @@ const ButtonContainer = styled.div`
     text-align: center;
     align-items: center;
     font-size: 20px;
-    margin: 10px;
+    margin: 10px 0;
   }
 
   @media screen and (max-width: 900px) {
