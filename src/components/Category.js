@@ -57,6 +57,7 @@ const ButtonAndIconContainer = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
+    object-fit: cover;
     border-bottom:.3px solid rgb(87,88,89);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -94,5 +95,5 @@ const IconContainer2 = styled.img`
   width: 100%;
   height: 100%;
   transition: all 500ms;
-  opacity: ${(props) => (props.showPlayIcon ? ".85" : "0")};
+  opacity: ${(props) => (props.showPlayIcon ? ".7" : "0")};
 `;
