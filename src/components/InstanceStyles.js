@@ -41,31 +41,19 @@ export const CategoryContainer = styled.div`
   align-items: ${(props) => (props.showbutton ? "" : "space-between")};
   align-items: center;
   margin: 30px 0;
-  /* height: ${(props) => (props.showbutton ? "700px" : "auto")}; */
-  height: auto;
+  height: ${(props) => (props.showbutton ? "400px" : "auto")};
   transition: height 0.7s ease;
   overflow: ${(props) => (props.showbutton ? "auto" : "hidden")};
   width: 1200px;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
 
   @media screen and (max-width: 1300px) {
     width: 80vw;
   }
 
   &::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #999999;
-    border-radius: 4px;
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: #666666;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
+    display: none;
   }
 `;
 
