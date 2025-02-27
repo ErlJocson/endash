@@ -46,7 +46,9 @@ const OldLinkInstances = () => {
                         icon={link.icon}
                         play={link.play}
                         showPlayIcon={false}
-                        clicked={() => (window.open(link.website), "_blank")}
+                        clicked={() => {
+                          window.open(link.website, "_blank", "noopener,noreferrer");
+                        }}
                       />
                     );
                   }
@@ -59,7 +61,9 @@ const OldLinkInstances = () => {
                       title={link.title}
                       icon={link.icon}
                       showPlayIcon={false}
-                      clicked={() => (window.open(link.website), "_blank")}
+                      clicked={() => {
+                        window.open(link.website, "_blank", "noopener,noreferrer");
+                      }}
                     />
                   );
                 })}
