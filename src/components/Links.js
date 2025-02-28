@@ -3,41 +3,25 @@ export const links = [
     title: "Digital Transformation",
     icon: "/icons/image_placeholder.jpg",
     video: "/videos/TransformationV4.0.mp4",
-<<<<<<< HEAD
-    website: "https://www.oculus.com/casting",
-=======
     website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
->>>>>>> 5d07a96cb81f55d630916157afe359e4c31ca8fc
   },
   {
     title: "Transformation Capability",
     icon: "/icons/image_placeholder.jpg",
     video: "/videos/transformation capability V4.mp4",
-<<<<<<< HEAD
-    website: "https://www.oculus.com/casting",
-=======
     website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
->>>>>>> 5d07a96cb81f55d630916157afe359e4c31ca8fc
   },
   {
     title: "Automation",
     icon: "/icons/image_placeholder.jpg",
     video: "/videos/Intelligent Automation V5.1.mp4",
-<<<<<<< HEAD
-    website: "https://www.oculus.com/casting",
-=======
     website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
->>>>>>> 5d07a96cb81f55d630916157afe359e4c31ca8fc
   },
   {
     title: "Speech AI",
     icon: "/icons/image_placeholder.jpg",
     video: "/videos/IA1.mp4",
-<<<<<<< HEAD
-    website: "https://www.oculus.com/casting",
-=======
     website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
->>>>>>> 5d07a96cb81f55d630916157afe359e4c31ca8fc
   },
   {
     title: "Vision AI",
