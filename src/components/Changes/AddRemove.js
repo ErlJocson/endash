@@ -1,6 +1,14 @@
 import styled from "styled-components";
+import axios from "axios";
+import { useState } from "react";
 
 const AddRemove = () => {
+  const [title, setTitle] = useState("");
+  const [link, setLink] = useState("");
+  const [icon, setIcon] = useState("");
+  const [video, setVideo] = useState("");
+  const [order, setOrder] = useState("");
+
   return (
     <>
       <MainContainer>
@@ -8,21 +16,31 @@ const AddRemove = () => {
         <form action="">
           <InputContainer>
             <label htmlFor="">Title</label>
-            <input type="text" />
+            <input
+              type="text"
+              required
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
           </InputContainer>
           <InputContainer>
             <label htmlFor="">Link</label>
-            <input type="text" />
+            <input
+              type="text"
+              required
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+            />
           </InputContainer>
 
           <FileUploadContainer>
             <div>
               <label htmlFor="">Icon</label>
-              <input type="file" />
+              <input type="file" required />
             </div>
             <div>
               <label htmlFor="">Video</label>
-              <input type="file" />
+              <input type="file" required />
             </div>
           </FileUploadContainer>
 
