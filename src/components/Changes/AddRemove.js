@@ -5,9 +5,11 @@ import { useState } from "react";
 const AddRemove = () => {
   const [title, setTitle] = useState("");
   const [link, setLink] = useState("");
-  const [icon, setIcon] = useState("");
-  const [video, setVideo] = useState("");
-  const [order, setOrder] = useState("");
+  const [icon, setIcon] = useState(null);
+  const [video, setVideo] = useState(null);
+  const [order, setOrder] = useState(0);
+
+  const handleAddCard = () => {};
 
   return (
     <>
@@ -36,17 +38,37 @@ const AddRemove = () => {
           <FileUploadContainer>
             <div>
               <label htmlFor="">Icon</label>
-              <input type="file" required />
+              <input
+                type="file"
+                required
+                onChange={(e) => setIcon(e.target.files[0])}
+              />
             </div>
             <div>
               <label htmlFor="">Video</label>
-              <input type="file" required />
+              <input
+                type="file"
+                required
+                onChange={(e) => setVideo(e.target.files[0])}
+              />
             </div>
           </FileUploadContainer>
 
           <SubmitButtonContainer>
-            <button className="submit">SUBMIT</button>
-            <button className="reset">RESET</button>
+            <button className="submit" onClick={handleAddCard}>
+              SUBMIT
+            </button>
+            <button
+              className="reset"
+              onClick={() => {
+                setTitle("");
+                setLink("");
+                setIcon(null);
+                setVideo(null);
+              }}
+            >
+              RESET
+            </button>
           </SubmitButtonContainer>
         </form>
       </MainContainer>
