@@ -14,7 +14,7 @@ const Navigation = () => {
             <Link to="/reorder">Reorder</Link>
           </p>
           <p>
-            <Link to="/edit-details">Edit Details</Link>
+            <Link to="/add-card">Add a Card</Link>
           </p>
         </LinkContainer>
 

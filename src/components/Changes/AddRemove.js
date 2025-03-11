@@ -7,9 +7,32 @@ const AddRemove = () => {
   const [link, setLink] = useState("");
   const [icon, setIcon] = useState(null);
   const [video, setVideo] = useState(null);
-  const [order, setOrder] = useState(0);
+  const [order, setOrder] = useState(2);
 
-  const handleAddCard = () => {};
+  const handleAddCard = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+
+    formData.append("name", title);
+    formData.append("link", link);
+    formData.append("icon", icon);
+    formData.append("video", video);
+    formData.append("order", order);
+
+    axios
+      .post("http://127.0.0.1:5000/api/add-card", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      })
+      .then((response) => {
+        console.log("Success:", response.data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
 
   return (
     <>

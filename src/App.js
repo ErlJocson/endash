@@ -13,7 +13,7 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" exact element={<MainPage />} />
-        <Route path="/edit-details" element={<AddRemove />} />
+        <Route path="/add-card" element={<AddRemove />} />
         <Route path="/reorder" element={<Reorder />} />
         <Route path="/old/video" element={<OldVideoInstances />} />
         <Route path="/old/link" element={<OldLinkInstances />} />
