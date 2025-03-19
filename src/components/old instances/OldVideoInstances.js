@@ -57,12 +57,13 @@ const OldVideoInstance = () => {
           <CategoryContainer showbutton={showAllButton}>
             {!showAllButton
               ? links.map((link, index) => {
-                  if (index < 6 &&  link.video) {
+                  if (index < 6 && link.video) {
                     return (
                       <Category
                         key={index}
                         title={link.title}
                         icon={link.icon}
+                        icon2={link.icon2}
                         play={link.play}
                         showPlayIcon={true}
                         clicked={() => {
@@ -78,22 +79,23 @@ const OldVideoInstance = () => {
                   return false;
                 })
               : links.map((link, index) => {
-                if (link.video) {
-                  return (
-                    <Category
-                      key={index}
-                      title={link.title}
-                      showPlayIcon={true}
-                      icon={link.icon}
-                      clicked={() => {
-                        handleShowModal();
-                        setVideoLink(process.env.PUBLIC_URL + link.video);
-                        setWebsiteLink(link.website);
-                        setVideoTitle(link.title);
-                      }}
-                      modal={() => handleShowModal()}
-                    />
-                  )};
+                  if (link.video) {
+                    return (
+                      <Category
+                        key={index}
+                        title={link.title}
+                        showPlayIcon={true}
+                        icon={link.icon}
+                        clicked={() => {
+                          handleShowModal();
+                          setVideoLink(process.env.PUBLIC_URL + link.video);
+                          setWebsiteLink(link.website);
+                          setVideoTitle(link.title);
+                        }}
+                        modal={() => handleShowModal()}
+                      />
+                    );
+                  }
                 })}
           </CategoryContainer>
 
@@ -112,7 +114,6 @@ const OldVideoInstance = () => {
               title="See All"
             />
           )} */}
-
         </ContentContainer>
       </MainContainer>
     </>
