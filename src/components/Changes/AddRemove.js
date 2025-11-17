@@ -1,6 +1,39 @@
 import styled from "styled-components";
+import axios from "axios";
+import { useState } from "react";
 
 const AddRemove = () => {
+  const [title, setTitle] = useState("");
+  const [link, setLink] = useState("");
+  const [icon, setIcon] = useState(null);
+  const [video, setVideo] = useState(null);
+  const [order, setOrder] = useState(2);
+
+  const handleAddCard = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+
+    formData.append("name", title);
+    formData.append("link", link);
+    formData.append("icon", icon);
+    formData.append("video", video);
+    formData.append("order", order);
+
+    axios
+      .post("http://127.0.0.1:5000/api/add-card", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      })
+      .then((response) => {
+        console.log("Success:", response.data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+
   return (
     <>
       <MainContainer>
@@ -8,27 +41,57 @@ const AddRemove = () => {
         <form action="">
           <InputContainer>
             <label htmlFor="">Title</label>
-            <input type="text" />
+            <input
+              type="text"
+              required
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
           </InputContainer>
           <InputContainer>
             <label htmlFor="">Link</label>
-            <input type="text" />
+            <input
+              type="text"
+              required
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+            />
           </InputContainer>
 
           <FileUploadContainer>
             <div>
               <label htmlFor="">Icon</label>
-              <input type="file" />
+              <input
+                type="file"
+                required
+                onChange={(e) => setIcon(e.target.files[0])}
+              />
             </div>
             <div>
               <label htmlFor="">Video</label>
-              <input type="file" />
+              <input
+                type="file"
+                required
+                onChange={(e) => setVideo(e.target.files[0])}
+              />
             </div>
           </FileUploadContainer>
 
           <SubmitButtonContainer>
-            <button className="submit">SUBMIT</button>
-            <button className="reset">RESET</button>
+            <button className="submit" onClick={handleAddCard}>
+              SUBMIT
+            </button>
+            <button
+              className="reset"
+              onClick={() => {
+                setTitle("");
+                setLink("");
+                setIcon(null);
+                setVideo(null);
+              }}
+            >
+              RESET
+            </button>
           </SubmitButtonContainer>
         </form>
       </MainContainer>

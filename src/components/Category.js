@@ -6,12 +6,18 @@ function Category(props) {
       <CardContainer className="dark-shadow">
         <ButtonAndIconContainer>
           <img src={process.env.PUBLIC_URL + props.icon} alt="" />
-            <IconContainer2
-              src={process.env.PUBLIC_URL + "/icons/play.png"}
-              title={"Play Video for " + props.title}
-              onClick={props.clicked}
-              showPlayIcon={props.showPlayIcon}
-            />
+
+          <img
+            src={process.env.PUBLIC_URL + props.icon2}
+            alt=""
+            className="second-icon"
+          />
+          <IconContainer2
+            src={process.env.PUBLIC_URL + "/icons/play.png"}
+            title={"Play Video for " + props.title}
+            onClick={props.clicked}
+            showPlayIcon={props.showPlayIcon}
+          />
         </ButtonAndIconContainer>
 
         <CardTitleContainer>
@@ -31,7 +37,6 @@ const CardContainer = styled.div`
   background-color: white;
   border: 2px solid rgb(87, 88, 89);
   border-radius: 5px;
-
 
   @media screen and (max-width: 900px) {
     width: 110px;
@@ -58,9 +63,22 @@ const ButtonAndIconContainer = styled.div`
     height: 100%;
     position: absolute;
     object-fit: cover;
-    border-bottom:.3px solid rgb(87,88,89);
+    border-bottom: 0.3px solid rgb(87, 88, 89);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+  }
+
+  .second-icon {
+    object-fit: cover;
+    margin-right: 5px;
+    margin-top: 5px;
+    right: 0;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, .7);
   }
 `;
 
@@ -79,7 +97,7 @@ const CardTitleContainer = styled.div`
 
 const CardTitle = styled.h5`
   color: black;
-   text-align: center; 
+  text-align: center;
   @media screen and (max-width: 900px) {
     font-size: 12px;
   }
