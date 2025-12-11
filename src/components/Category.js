@@ -7,11 +7,11 @@ function Category(props) {
         <ButtonAndIconContainer>
           <img src={process.env.PUBLIC_URL + props.icon} alt="" />
 
-          <img
+          {/* <img
             src={process.env.PUBLIC_URL + props.icon2}
             alt=""
             className="second-icon"
-          />
+          /> */}
           <IconContainer2
             src={process.env.PUBLIC_URL + "/icons/play.png"}
             title={"Play Video for " + props.title}
@@ -78,7 +78,7 @@ const ButtonAndIconContainer = styled.div`
     padding: 5px;
     height: 40px;
     width: 40px;
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, 0.7);
   }
 `;
 

@@ -4,14 +4,16 @@ export const links = [
     icon: "/icons/image_placeholder.jpg",
     icon2: "/icons/late/digital transformation.png",
     video: "/videos/TransformationV4.0.mp4",
-    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
+    website:
+      "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
   },
   {
     title: "Transformation Capability",
     icon: "/icons/image_placeholder.jpg",
     icon2: "/icons/late/transformation capability.png",
     video: "/videos/Transformation Capability V4.mp4",
-    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
+    website:
+      "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
   },
   {
     title: "Vision AI",
@@ -20,12 +22,21 @@ export const links = [
     video: "/videos/Vision AI V3.75.mp4",
     website: "https://www.oculus.com/casting",
   },
-   {
+  {
     title: "Agentic AI",
     icon: "/icons/image_placeholder.jpg",
     icon2: "/icons/late/speech.png",
-    video: "/videos/AI Agent - Retail.mp4",
-    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
+    video: "/videos/Translation Bot.mp4",
+    website:
+      "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
+  },
+  {
+    title: "Smart Assist",
+    icon: "/icons/image_placeholder.jpg",
+    icon2: "/icons/late/translation bot.png",
+    video: "/videos/TransformationV4.0.mp4",
+    website:
+      "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
   },
   {
     title: "Agent X",
@@ -39,38 +50,43 @@ export const links = [
     icon: "/icons/image_placeholder.jpg",
     icon2: "/icons/late/automation.png",
     video: "/videos/Intelligent Automation V5.1.mp4",
-    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
+    website:
+      "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
   },
   {
     title: "Document Translator",
     icon: "/icons/image_placeholder.jpg",
     icon2: "/icons/late/document translator.png",
     video: "/videos/HGS Translator V1.1 4.mp4",
-    website: "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
+    website:
+      "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
   },
   {
     title: "Productivity",
     icon: "/icons/image_placeholder.jpg",
     video: false,
-    website: "https://app.powerbi.com/links/1NLx0EsgjY?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
+    website:
+      "https://app.powerbi.com/links/1NLx0EsgjY?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
   },
   {
     title: "Caller Sentiment",
     icon: "/icons/image_placeholder.jpg",
     video: false,
-    website: "https://app.powerbi.com/links/iO4s4gg519?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
+    website:
+      "https://app.powerbi.com/links/iO4s4gg519?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
   },
   {
     title: "Customer Effort",
     icon: "/icons/image_placeholder.jpg",
     video: false,
-    website: "https://app.powerbi.com/links/QqMtcpZNdv?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
+    website:
+      "https://app.powerbi.com/links/QqMtcpZNdv?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
   },
   {
     title: "Survey Analytics",
     icon: "/icons/image_placeholder.jpg",
     video: false,
-    website: "https://app.powerbi.com/links/Qj-u1ai2y4?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
+    website:
+      "https://app.powerbi.com/links/Qj-u1ai2y4?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
   },
-
-]
+];

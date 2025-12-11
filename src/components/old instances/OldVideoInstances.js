@@ -63,7 +63,7 @@ const OldVideoInstance = () => {
                         key={index}
                         title={link.title}
                         icon={link.icon}
-                        icon2={link.icon2}
+                        // icon2={link.icon2} removed this line: 12/11/2025
                         play={link.play}
                         showPlayIcon={true}
                         clicked={() => {
@@ -113,8 +113,8 @@ const OldVideoInstance = () => {
               onClick={handleShowButton}
               className="jump"
               title="See All"
-            />)
-          }
+            />
+          )}
         </ContentContainer>
       </MainContainer>
     </>
