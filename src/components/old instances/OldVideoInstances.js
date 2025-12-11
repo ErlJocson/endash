@@ -57,7 +57,7 @@ const OldVideoInstance = () => {
           <CategoryContainer showbutton={showAllButton}>
             {!showAllButton
               ? links.map((link, index) => {
-                  if (index < 4 && link.video) {
+                  if (index < 6 && link.video) {
                     return (
                       <Category
                         key={index}

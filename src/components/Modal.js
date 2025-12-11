@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import { useRef, useState, useEffect, useCallback } from "react";
-import { GiPlayButton, GiPauseButton } from "react-icons/gi";
 import { IoMdCloseCircleOutline } from "react-icons/io";
-import { CgWebsite } from "react-icons/cg";
-import { AiOutlineFullscreen } from "react-icons/ai";
 
 const Modal = ({ videoLink, modal, website, title }) => {
   const videoRef = useRef(null);
@@ -54,35 +51,12 @@ const Modal = ({ videoLink, modal, website, title }) => {
   return (
     <ModalContainer>
       <MainContentContainer>
+
+         <video ref={videoRef} controls >
+          <source src={videoLink} type="video/mp4" />
+        </video>
+
       <ButtonContainer>
-          {/* {videoStatus ? (
-            <button
-              onClick={handlePause}
-              className="btn-pause"
-              title="Pause the Video"
-            >
-              <GiPauseButton />
-            </button>
-          ) : (
-            <button
-              onClick={handlePlay}
-              className="btn-success"
-              title="Play the Video"
-            >
-              <GiPlayButton />
-            </button>
-          )} */}
-
-          {/* <button
-            onClick={() => {
-              window.open(website, "_blank");
-            }}
-            className="btn-site"
-            title={"Visit Website for " + title}
-          >
-            <CgWebsite />
-          </button> */}
-
           <button
             onClick={() => {
               handleStop();
@@ -93,11 +67,8 @@ const Modal = ({ videoLink, modal, website, title }) => {
           >
             <IoMdCloseCircleOutline />
           </button>
+
         </ButtonContainer>
-        <video ref={videoRef} controls >
-          <source src={videoLink} type="video/mp4" />
-        </video>
-        
       </MainContentContainer>
     </ModalContainer>
   );
@@ -111,6 +82,7 @@ const ModalContainer = styled.div`
   background-color: rgb(0, 0, 0, 0.9);
   width: 100%;
   height: 100%;
+  flex-direction: column-reverse;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,26 +90,26 @@ const ModalContainer = styled.div`
 
 const MainContentContainer = styled.div`
   display: flex;
-  flex-direction:column ;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   video {
     border-radius: 5px;
     max-width: 100%;  
-    height: 800px; 
+    height: 650px; 
     object-fit: cover; 
-    margin-bottom: 5vh;
+    // margin-bottom: 5vh;
+
   }
 `;
 
 const ButtonContainer = styled.div`
-  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: right;
   align-items: center;
-
+  position: absolute;
+  bottom:0;
   button {
     padding: 4px 40px;
     cursor: pointer;

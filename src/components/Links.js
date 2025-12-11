@@ -20,7 +20,7 @@ export const links = [
     video: "/videos/Vision AI V3.75.mp4",
     website: "https://www.oculus.com/casting",
   },
-  {
+   {
     title: "Agentic AI",
     icon: "/icons/image_placeholder.jpg",
     icon2: "/icons/late/speech.png",
@@ -72,4 +72,5 @@ export const links = [
     video: false,
     website: "https://app.powerbi.com/links/Qj-u1ai2y4?ctid=eab4e2a5-663d-402b-8bec-a272cf4c010b&pbi_source=linkShare",
   },
+
 ]
