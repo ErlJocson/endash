@@ -46,6 +46,14 @@ export const links = [
     website: "https://www.oculus.com/casting",
   },
   {
+    title: "HGS Tour",
+    icon: "/icons/image_placeholder.jpg",
+    icon2: "/icons/late/transformation capability.png",
+    video: "/videos/HGS Bridgetowne Virtual Tour_R2.mp4",
+    website:
+      "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
+  },
+  {
     title: "Automation",
     icon: "/icons/image_placeholder.jpg",
     icon2: "/icons/late/automation.png",
