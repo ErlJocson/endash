@@ -26,7 +26,7 @@ export const links = [
     title: "Agentic AI",
     icon: "/icons/image_placeholder.jpg",
     icon2: "/icons/late/speech.png",
-    video: "/videos/Translation Bot.mp4",
+    video: "/videos/AI Agent - Retail.mp4",
     website:
       "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
   },
@@ -34,7 +34,7 @@ export const links = [
     title: "Smart Assist",
     icon: "/icons/image_placeholder.jpg",
     icon2: "/icons/late/translation bot.png",
-    video: "/videos/TransformationV4.0.mp4",
+    video: "/videos/Translation Bot.mp4",
     website:
       "http://hgs-bt-iaw-01/NxIA/Main/Login.aspx?ReturnUrl=%2fNxIA%2fMain%2f",
   },
