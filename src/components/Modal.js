@@ -11,7 +11,7 @@ const Modal = ({ videoLink, modal, website, title }) => {
   }, [modal]);
 
   useEffect(() => {
-    handlePlay()
+    handlePlay();
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
         handleEscapeKey();
@@ -27,7 +27,6 @@ const Modal = ({ videoLink, modal, website, title }) => {
 
   const handlePlay = () => {
     if (videoRef.current) {
- 
       videoRef.current.play();
     }
 
@@ -51,23 +50,20 @@ const Modal = ({ videoLink, modal, website, title }) => {
   return (
     <ModalContainer>
       <MainContentContainer>
-
-         <video ref={videoRef} controls >
+        <video ref={videoRef} controls>
           <source src={videoLink} type="video/mp4" />
         </video>
 
-      <ButtonContainer>
+        <ButtonContainer>
           <button
             onClick={() => {
               handleStop();
               modal();
             }}
             className="btn-danger"
-            title="Close the Video"
-          >
+            title="Close the Video">
             <IoMdCloseCircleOutline />
           </button>
-
         </ButtonContainer>
       </MainContentContainer>
     </ModalContainer>
@@ -79,7 +75,7 @@ export default Modal;
 const ModalContainer = styled.div`
   position: absolute;
   z-index: 10;
-  background-color: rgb(0, 0, 0, 0.9);
+  background-color: black;
   width: 100%;
   height: 100%;
   flex-direction: column-reverse;
@@ -94,12 +90,12 @@ const MainContentContainer = styled.div`
   align-items: center;
   height: 100vh;
   video {
-    border-radius: 5px;
-    max-width: 100%;  
-    height: 650px; 
-    object-fit: cover; 
-    // margin-bottom: 5vh;
-
+    width: 100%;
+    max-width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
   }
 `;
 
@@ -109,7 +105,7 @@ const ButtonContainer = styled.div`
   justify-content: right;
   align-items: center;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   button {
     padding: 4px 40px;
     cursor: pointer;
